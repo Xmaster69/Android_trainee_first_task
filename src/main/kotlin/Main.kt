@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
                 if (returnRegex.matches(input = userCommand)) {
 
                     var owner = Owner(carNumber = userCommand.split(" ")[1], ownerName = userCommand.split(" ")[2])
-                    manager.pickUp(owner.carNumber, parking, owner.name)
+                    manager.pickUp(owner.carNumber, parking, owner.ownerName)
 
                 } else {
                     println("Данные введены некорректно! Правильно: '/return номер имя_владельца (/return a001aa27 anton_frolov)'")
