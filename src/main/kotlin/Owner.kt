@@ -1,4 +1,1 @@
-class Owner(ownerName: String, carNumber: String) {
-    val name = ownerName
-    val carNumber = carNumber
-}
+data class Owner(val ownerName: String, val carNumber: String)

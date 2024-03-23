@@ -1,7 +1,1 @@
-class Car(color: String, brand: String, number: String, owner: String) {
-    val color = color
-    val brand = brand
-    val number = number
-    val owner = owner
-
-}
+data class Car(val color: String, val brand: String, val number: String, val owner: String)
